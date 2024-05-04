@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query selector All</title>
+</head>
+<body>
+    <h1 class="first" id="here">Shivam is present</h1>
+    <li class="list-item">One</li>
+    <li class="list-item">Two</li>
+    <li class="list-item">Three</li>
+    <li class="list-item">four</li>
+
+    <!-- 
+        const myH1 = document.querySelectorAll('h1')
+        undefined
+myH1
+NodeList [h1#here.first]
+        myH1.style.color = 'green'
+
+
+myH1[0].style.color = 'orange'
+'orange'
+     -->
+    <!-- note : we cannot select list without indicating Array
+
+
+        document.querySelectorAll('li')
+         NodeList(3) [li, li, li]
+const shivamDon = document.querySelectorAll('li')
+undefined
+        shivamDon
+        NodeList(3) [li, li, li]
+const myArr = [1,2,3,4]
+undefined
+         myArr
+         (4) [1, 2, 3, 4]
+shivamDon
+NodeList(3) [li, li, li]
+         shivamDon.style.color = 'green'
+         VM785:1 Uncaught TypeError: Cannot set properties of undefined (setting 'color')
+    
+shivamDon[0].style.color = 'green'
+'green'
+shivamDon[0].style.color = 'blue'
+'blue'
+
+
+     -->
+</body>
+</html>
