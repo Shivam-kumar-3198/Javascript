@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Creation</title>
+</head>
+<body style="background-color: black; color:white;">
+    <div id="temp" class="parent">
+        <li class="day">Monday</li>
+        <li class="day">Tuesday</li>
+        <li class="day">Wednesday</li>
+        <li class="day">Thrusday</li>
+    </div>
+
+    
+</body>
+<script>
+    const parent = document.querySelector('.parent')
+    // console.log(parent);
+    // console.log(parent.children);
+    // console.log(parent.children[0]);
+    // console.log(parent.children[1]);
+
+    // document.getElementsByClassName('.parent');
+    // console.log(parent);
+    for (let i = 0; i < parent.children.length; i++) {
+         console.log(parent.children[i].innerHTML);
+        
+    }
+
+    parent.children[1].style.color = "orange"
+    console.log(parent.firstElement);
+
+    parent.children[0].style.color = "red"
+    console.log(parent.children);
+
+
+    const dayOne = document.querySelector('.day')
+    /*
+    console.log(dayOne);
+    console.log(dayOne.parentElement);
+    console.log(dayOne.nextElementSibling);
+*/
+
+
+    console.log("parent");
+/*
+This doesnot work
+     const dayTwo = document.querySelector('.day')
+     console.log(dayTwo[0]);
+
+     */
+</script>
+
+</html>
