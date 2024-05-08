@@ -9,6 +9,14 @@ buttons.forEach(function (button) {
     // console.log(button);
     button.addEventListener('click', function (hi) {
        // console.log(e.target);
+       /*
+       HTMLSpanElement{attributes: {…}, innerHTML: "", nodeType: 1, tagName: "span"}
+attributes: Object
+innerHTML: ""
+nodeType: 1
+tagName: "span"
+<prototype>: HTMLSpanElement
+*/
        // console.log(e);
        if(hi.target.id === 'grey'){
         body.style.backgroundColor = "grey";
