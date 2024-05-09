@@ -20,6 +20,7 @@ tagName: "span"
        // console.log(e);
        if(hi.target.id === 'grey'){
         body.style.backgroundColor = "grey";
+        body.style.cursor = "pointer";
        }
 
        if (hi.target.id === 'white') {
