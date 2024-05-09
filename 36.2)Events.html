@@ -30,6 +30,10 @@
     //alt
     //Altkey,ctrlkey,shiftkey,keycode
 
+
+    // Event Propagation ye jata hai bottom to top
+/*
+
     document.getElementById('images').addEventListener('click', function (e){
         console.log("Clicked inside the ul");
     },false)
@@ -37,8 +41,21 @@
 
     document.getElementById('owl').addEventListener('click', function (e){
         console.log("Owl Clicked");
+        e.stopPropagation()
+        
     },false)
 
-   
+*/
+    //Capturing Mode
+
+    document.getElementById('images').addEventListener('click', function (e){
+        console.log("Kya click karoge");
+    },true)
+
+    document.getElementById('owl').addEventListener('click',function(e){
+        console.log("Mat kar bhai");
+        e.stopPropagation()
+    },true)
+   //ye jada hai top to bottom
 </script>
 </html>
