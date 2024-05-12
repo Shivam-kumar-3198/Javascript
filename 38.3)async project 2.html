@@ -8,30 +8,21 @@
 <body>
     <h1>Shivam is Here</h1>
     <button id="stop">Stop</button>
+    <button id="start">Start</button>
 </body>
 
 <script>
-    // const shivam =function(){
-    //     console.log("Shivam")
-    // }
-    
-    const changeText = function(){
-        document.querySelector('h1').innerHTML = "Best Js series"
+    // setInterval(function(){
+    //     console.log("Shivam no 1",Date.now());
+    // },5000)
+  
+    const sayDate = function(str){
+        console.log(str, Date.now());
     }
-
-    const changeMe = setTimeout(changeText, 5000)
-
-    //setTimeout(shivam, 5000)
-
-    //clearTimeout(changeMe)
+    setInterval(sayDate, 10000, "Hi buddy")
 
 
-
-    document.querySelector('#stop').
-    addEventListener('click',function(){
-        clearTimeout(changeMe)
-        console.log("STOPPED")
-        
-    })
+    const intervalId = setInterval(sayDate,1000,"hi")
+    clearInterval(intervalId)
 </script>
 </html>
