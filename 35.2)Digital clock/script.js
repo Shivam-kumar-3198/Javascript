@@ -11,4 +11,4 @@ setInterval(function(){
      let date = new Date();
      clock.innerHTML = date.toLocaleTimeString();
      
-},10000)
+},1000)
