@@ -1,8 +1,7 @@
 
 var hello = "How are you buddy"
 
-var charArray = hello.split("").reverse().join("");
-
-charArray.forEach(function(c){
-    console.log(c);
+var savedStr = hello.split("").map(function(word){
+return word.split("").reverse().join("")
 })
+console.log(savedStr.reverse().join());
