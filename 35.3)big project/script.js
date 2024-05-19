@@ -27,8 +27,28 @@ if (playGame) {
 // everything assigned succesfully we have to assign function
 
 function validateGuess(guess){
-//
+    if(isNaN(guess)){
+        alert('Please enter a valid number')
+    } else if(guess < 1){
+        alert('please enter a valid number that is more than 1')
+    }
+     else if(guess > 100){
+        alert('please enter a valid number that is less than 100')
+    }  else{
+        prevGuess.push(guess)
+        if(numGuess === 10){
+            displayGuess(guess)
+            displayMessage(`Game Over. Random nmuber was ${randomNumber}`)
+            endGame()
+        }else{
+            displayGuess(guess)
+            checkGuess(guess)
+        }
+    }
 }
+
+//1st function above
+
 function checkGuess(guess){
 //
 }
