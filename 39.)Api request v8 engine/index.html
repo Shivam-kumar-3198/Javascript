@@ -6,6 +6,24 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Hey We are Learning About XML files</h1>
 </body>
+
+
+<script>
+    const requestURL = 'https://randomuser.me/api/'
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', 'https://randomuser.me/api/');
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState);
+        if(xhr.readyState === 4){
+            const data = JSON.parse(this.responseText)   //How to convert string into objects
+            console.log(typeof data);
+            console.log(this.responseText);
+            console.log(data.follower);
+        }
+    }
+    console.log(xhr.readyState);
+    xhr.send()
+</script>
 </html>
