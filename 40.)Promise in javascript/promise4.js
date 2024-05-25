@@ -1,4 +1,4 @@
-const promiseFour = new promiseOne(function(resolve,reject){
+const promiseFour = new promiseFour(function(resolve,reject){
       setTimeout(function(){
         let error = true
 
@@ -11,8 +11,15 @@ const promiseFour = new promiseOne(function(resolve,reject){
       },1000)
 })
 
-const username = promiseFour.then((user) =>{
+const username = promiseFour
+.then((user) =>{
    console.log(user);
    return user.username
+})
+.then((username)=>{
+    console.log(username);
+})
+.catch(function(error){
+    console.log(error);
 })
 
