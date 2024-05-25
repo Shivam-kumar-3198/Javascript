@@ -22,4 +22,4 @@ const username = promiseFour
 .catch(function(error){
     console.log(error);
 })
-
+.finally(()=> console.log("the peomise is resolved"))
