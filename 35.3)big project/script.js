@@ -78,7 +78,11 @@ function newGame() {
         randomNumber = parseInt(Math.random()*100 +1);
         prevGuess = []
         numGuess = 1
-        guessSlot.innerHTML = 
+        guessSlot.innerHTML = ''
+        remaining.innerHTML = `${11 - numGuess}`;
+        userInput.removeAttribute('disabled')
+        startOver.removeChild(p);
+        
         playGame = true;
 
     })
