@@ -9,3 +9,28 @@ So, to answer your question:
 
 JavaScript doesn't have classes in the strictest sense.
 It has a class syntax that mimics class-based inheritance for better readability.
+
+
+#OOP that means object oriented programming
+
+what is object 
+--->Collection of properties and methods
+--->toLowerCase
+
+why object oriented programming ?
+--->To avoid code meshup
+
+parts of oop
+--->Object literal
+
+-constructor function
+-prototypes
+-Classes
+-Instances (new,this)
+
+
+#4 Pillars of OOPS
+abstarction
+enscapsulation
+Inheritance
+Polymorphism
