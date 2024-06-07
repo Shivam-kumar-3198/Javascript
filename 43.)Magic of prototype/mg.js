@@ -17,5 +17,11 @@ createUser.prototype.increment = function(){
     score++
 }
 
+createUser.prototype.printMe = function() {
+    console.log(`score is ${score
+        
+    }`);
+}
+
 const chai = createUser("chai", 25)
 const tea  = createUser("tea", 250)
