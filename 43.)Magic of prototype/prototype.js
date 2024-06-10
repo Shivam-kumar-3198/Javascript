@@ -1,3 +1,10 @@
-let myName = "shivam"
+let myHeroes = ["thor", "spiderman"]
 
-console.log(myName.trim);
+let heroPower ={
+    thor:"Hammer",
+    spiderman:"sling",
+
+    getSpiderPower: function(){
+        console.log(`Spidy power is ${this.spiderman}`);
+    }
+}
