@@ -1,3 +1,5 @@
+//Hardcode value ko bhi cahnge kar sakte hai kuch conditions ke saath
+
 const shivam = {
     name: 'das',
     price: '20 Rupees',
